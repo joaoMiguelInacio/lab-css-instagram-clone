@@ -40,29 +40,25 @@ body {
 .header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .Log-in-button{
-  border: 0px;
-  background-color: #1c5380;
-  text-indent: 15px;
-  align-self: center;
-  color: aliceblue;
-  font-size: larger;
-}
-
-.button-box{
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  background-color: #1c5380;
-  border: 1px #06365f;
-  padding: 2% 5% 2% 5%;
-  height: fit-content;
   border-top-left-radius:5px;
   border-top-right-radius:5px;
   border-bottom-right-radius:5px;
   border-bottom-left-radius:5px;
-
+  border: 2px #06365f solid;
+  box-shadow: 0 0 0.5em #06365f;
+  background: none;
+  text-indent: 30%;
+  width: 150px;
+  height: 50px;
+  color: aliceblue;
+  font-size: larger;
+  background-image: url("../images/home.png");
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-position: 15%;
 }
 
 .text-box {
@@ -88,7 +84,8 @@ h4 {
 }
 
 h3{
-  padding: 0 0 3% 0 ;
+  padding: 0 0 10% 0 ;
+  font-weight: 400;
 }
 
 h3 p{
@@ -106,27 +103,15 @@ h3 p{
 }
 
 .apple-store{
-  background-image: url("../images/badge-iphone.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
   width: 200px;
   height: auto;
   
 }
 
 .play-strore{
-  background-image: url("../images/badge-android.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
   width: 200px;
   height: auto;
 }
-
-/*Quite frustrated with the fact that I can't get the image to show and
-for not knowing why. inspected both items (apple-store and play-store). 
-They are equal, still the play-strore image wont appear. 
-Always preferred androids and windows, so I am feeling betrayed as well.*/
-
 
 footer{
   display: flex;
@@ -134,5 +119,19 @@ footer{
   justify-content: space-evenly;
   align-content: center;
   padding: 0 25% 0 25%;
+}
+
+footer a{
+  color: #1c5380;
+  text-decoration: none;
+  font-size: 250;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer p{
+  font-size: 250;
+  color: lightslategray;
+  font-weight: bold;
 }
 
